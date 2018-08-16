@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mEditText;
     private Button mManualUpdate;
 
+    private TextView option;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,18 +124,23 @@ public class MainActivity extends AppCompatActivity {
         prev = findViewById(R.id.prev);
         next = findViewById(R.id.next);
 
+        option = findViewById(R.id.option);
+
         showCoin();
+        showOptions();
 
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 decrement();
+                showOptions();
             }
         });
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 increment();
+                showOptions();
             }
         });
         //
@@ -196,9 +203,18 @@ public class MainActivity extends AppCompatActivity {
         } else {
             currentIndex = currentIndex % coins.length;
         }
+
+
     }
 
 
+    public void showOptions() {
+        int options = currentIndex + 1;
+        int length = coins.length;
+
+        option.setText(options + "/" + length);
+
+    }
 
     //
 

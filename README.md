@@ -5,7 +5,16 @@
   * [Android UI Events](https://developer.android.com/guide/topics/ui/ui-events.html)
   * [Tutorial: System.currentTimeMillis](https://www.tutorialspoint.com/java/lang/system_currenttimemillis.htm)
   
-## Feature Tasks  
+## Feature Tasks
+
+![](IMG_2073.JPG)
+
+![](IMG_2074.JPG)
+
+![](IMG_2075.JPG)
+
+
+  
 #### Simple Counter
 Create an application that displays a number and a button. The number should
 increase when the button is clicked. This app proves that you can have data
